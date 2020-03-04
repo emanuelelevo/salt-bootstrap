@@ -5260,7 +5260,7 @@ __freebsd_get_packagesite() {
     _PACKAGESITE="http://pkg.freebsd.org/${ABI}/latest"
     # Awkwardly, we want the `${ABI}` to be in conf file without escaping
     PKGCONFURL="pkg+http://pkg.freebsd.org/\${ABI}/latest"
-    SALTPKGCONFURL="http://repo.saltstack.com/freebsd/\${ABI}/"
+    SALTPKGCONFURL="http://repo.saltstack.com/freebsd/\${ABI}"
 
     # Treat unset variables as errors once more
     set -o nounset
